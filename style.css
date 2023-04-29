@@ -1,0 +1,183 @@
+body{    
+    background:#F3F5FC;      
+    }
+
+
+.header{
+    height: 80px;
+}
+
+.logo{
+    display: inline-block;    
+    align-items: flex-start;
+    padding: 2rem 0 1rem 2rem;
+}
+
+.container{
+display: flex;
+}
+
+.textoEncriptador{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;    
+    top: 0;
+    width: 50%;
+    height: 450px;
+    margin-left: 20px;
+}
+
+.formulario{
+    display: flex;   
+    flex-wrap: wrap ;  
+    justify-content: center; 
+}
+
+.ingresarTexto{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 4rem 0 0 1rem;
+    width: 400px;
+    
+    height: 300px;
+    
+    color:#0A3871;
+    background:#F3F5FC;
+    /* text-transform: lowercase; */
+    border: none;
+    outline: none;    /* borra el contorno del input cuando el cursor esta dentro del mismo */
+}
+
+.ingresarTexto::placeholder{
+    color:#0A3871;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;      
+    width: 500px;
+    height: 67px;
+    left: 50px;
+    top: 77%;
+
+}
+.formulario p{  
+    display: flex; 
+    font-size: 19px;
+    margin: 1rem;
+}
+
+
+
+.anchoMuñeco{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 31px;
+    background: white;
+    margin: 0 0 0 5rem;
+    height: 485px;
+
+}
+
+.imgmuñeco{
+    display: flex;
+    left: 13%;
+    top: 10%;
+    width: 200px;
+}
+/* .texmuñeco{
+    position: relative;
+    top: 0;
+    left: 65em;
+    width: 400px; 
+    height: 800px;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+} */
+
+/* .muñeco{
+    position: relative;
+    width: 400px;
+    height: 700px;    
+    left: 910px;
+    margin: 0 200px 0 0;
+    border: none;
+    background: white;
+    border-radius: 32px;
+} */
+
+
+
+
+.mensaje1{
+    
+    width: 336px;
+    height: 58px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 120%;
+    color: #343A40;
+
+}
+
+.mensaje2{
+   
+    width: 280px;
+    height: 48px;
+    font-size: 18px;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #495057;
+}
+
+
+
+
+
+.encriptar{
+
+    width: 200px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    font-size: 1.5em;   
+    cursor: pointer;
+
+}
+
+.desencriptar{
+    
+    width: 200px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.copiar{
+    
+    width: 200px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 1.5em;
+    cursor: pointer;
+    
+}
+
+
+
