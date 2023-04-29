@@ -73,6 +73,7 @@ display: flex;
 .anchoMuñeco{
     display: flex;
     flex-direction: column;
+    align-items:center;
     border: none;
     border-radius: 31px;
     background: white;
@@ -82,35 +83,11 @@ display: flex;
 }
 
 .imgmuñeco{
-    display: flex;
-    left: 13%;
-    top: 10%;
+    display: flex;   
     width: 200px;
+    align-content:center;
+    margin: 2rem 0 1rem 0;
 }
-/* .texmuñeco{
-    position: relative;
-    top: 0;
-    left: 65em;
-    width: 400px; 
-    height: 800px;
-    border-radius: 32px;
-    border: none;
-    outline: none;
-} */
-
-/* .muñeco{
-    position: relative;
-    width: 400px;
-    height: 700px;    
-    left: 910px;
-    margin: 0 200px 0 0;
-    border: none;
-    background: white;
-    border-radius: 32px;
-} */
-
-
-
 
 .mensaje1{
     
@@ -119,23 +96,20 @@ display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    text-align: center;
-    line-height: 120%;
+    text-align: center;    
     color: #343A40;
 
 }
 
-.mensaje2{
-   
+.mensaje2{   
     width: 280px;
     height: 48px;
     font-size: 18px;
-    text-align: center;
-    
-    
+    text-align: center;    
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     color: #495057;
+    margin-bottom: 2rem;
 }
 
 

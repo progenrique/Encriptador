@@ -1,1 +1,0 @@
-investigar bien el qyuerry selector para javascryp y el .getElementById
