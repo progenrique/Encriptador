@@ -4,13 +4,22 @@ body{
 
 
 .header{
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo{
     display: inline-block;    
     align-items: flex-start;
     padding: 2rem 0 1rem 2rem;
+}
+
+.icono{
+    height: 50px ;
+    width: 50px;
+    padding-top: 2rem;
+    margin-left: 2rem;
+
 }
 
 .container{
@@ -38,10 +47,8 @@ display: flex;
     font-weight: bold;
     font-size: 32px;
     padding: 4rem 0 0 1rem;
-    width: 400px;
-    
-    height: 300px;
-    
+    width: 400px;    
+    height: 300px;    
     color:#0A3871;
     background:#F3F5FC;
     /* text-transform: lowercase; */
@@ -79,7 +86,15 @@ display: flex;
     background: white;
     margin: 0 0 0 5rem;
     height: 485px;
+    width: 300px;
+    outline: none;
 
+}
+
+.anchoMuñeco div{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .imgmuñeco{
@@ -91,13 +106,14 @@ display: flex;
 
 .mensaje1{
     
-    width: 336px;
+    width: 300px;
     height: 58px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
     text-align: center;    
     color: #343A40;
+    margin-top: 3rem;
 
 }
 
@@ -109,13 +125,17 @@ display: flex;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     color: #495057;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+
 }
 
-
-
-
-
+.mensaje3{
+    display: flex; 
+    font-size: 19px;
+    margin: 1rem;
+    font-style: bold;
+    color: #343A40;
+}
 .encriptar{
     width: 200px;
     height: 67px;
@@ -143,7 +163,7 @@ display: flex;
     
     width: 200px;
     height: 67px;
-    background: #D8DFE8;
+    background: white;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
@@ -151,6 +171,94 @@ display: flex;
     cursor: pointer;
     
 }
+.textoMensaje{
+    margin-top: 20px;
+    font-family: 'Inter';
+    font-size: 30px;
+    color: #495057;
+    border: none;
+    outline: none;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.textoMensaje::selection{
+    background: transparent;
+}
 
 
+@media screen and (max-width: 820px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;        
+    }
+    .ingresarTexto{       
+        padding: 1rem 0 0 1rem;
+        width: 400px;    
+        height: 450px;        
+    }
+    .textoEncriptador{
+        height: 600px;        
+    }
+    .anchoMuñeco{
+        margin-top: 1rem;
+        height: 200px;
+        width: 60%;
+        justify-content: center;
+    }
+    .imgmuñeco{
+        width: .5px;
+        height: .5px;
+        height: 10px;
+    }    
+    .mensaje1{
+        margin-top: 0;
+        width: 400px;
+        height: 20px;
+    }
+    .mensaje2{
+        margin-top: 1rem;
+    }
+}
 
+@media screen and (max-width: 500px) {
+
+    .formulario{
+        
+        display: flex;   
+        flex-wrap: wrap ;  
+        justify-content: center;
+    }
+    .mensaje1{
+        font-size:15px;
+        width: 150px;
+    }
+    .mensaje2{
+        font-size:12px;
+        width: 150px;
+    }
+    .mensaje2{
+        font-size:12px;
+        width: 150px;
+    }
+
+    .mensaje3{
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .ingresarTexto{       
+        padding: 1rem 0 0 1rem;
+        width: 300px;    
+        height: 250px;        
+    }
+    .textoEncriptador{
+        height: 400px;        
+    }
+    .anchoMuñeco{
+        width: 70%;
+    }
+    
+}

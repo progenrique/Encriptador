@@ -5,6 +5,44 @@ La letra "a" es convertida para "ai"
 La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat" */
 
+const contenedorDiv = document.querySelector("[data-contenedor]")
+const contenedor = document.querySelector("[data-section-muñeco]")
+
+
+ function mostrarTexto  (mensaje) { 
+    
+    const codigoMensaje = `<textarea cols="20" rows="14" class="textoMensaje"  data-mostrar-texto> ${mensaje} </textarea>                     
+    <button type="button" onclick="copiar()" class="copiar"> Copiar </button>`
+
+    contenedorDiv.remove()    
+
+    contenedor.innerHTML=codigoMensaje
+}
+
+
+const mostrarTextoDesencriptado = (mensaje) =>{
+
+    const codigoMensaje = `<textarea cols="20" rows="14" class="textoMensaje"  data-mostrar-texto> ${mensaje} </textarea>                     
+        <h5 class="mensaje3">El texto se descodifico correctamente</h5>`
+
+    contenedorDiv.remove()    
+
+    contenedor.innerHTML=codigoMensaje
+
+}
+
+
+const copiar = () =>{
+ const btnCopiar = document.querySelector(".copiar")
+ const textArea = document.querySelector(".textoMensaje")
+
+ textArea.focus()
+ document.execCommand("selectAll")
+ document.execCommand("copy")
+
+ alert("texto copiado")
+ 
+} 
 var textoEncriptado 
 const nuevoTexto = []
 const varDesencriptar = []
@@ -36,11 +74,15 @@ const encriptar = ()=>{
     }
      textoEncriptado = nuevoTexto.join("")
      
-     console.log(textoEncriptado)
+     console.log(textoEncriptado)      
+     
+     mostrarTexto(textoEncriptado)
+   
 }
 
 
 const desencriptar = () => {
+    console.log(nuevoTexto)
     for (let i = 0; i < nuevoTexto.length; i++) {
         if(nuevoTexto[i] == "ai"){
             varDesencriptar.push("a")
@@ -63,7 +105,11 @@ const desencriptar = () => {
     }
     
     const textoDesencriptado =varDesencriptar.join("")
-    
+
     console.log(textoDesencriptado)
+    
+    mostrarTextoDesencriptado(textoDesencriptado)
+
+
 
 }
