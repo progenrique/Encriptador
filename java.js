@@ -11,7 +11,7 @@ const contenedor = document.querySelector("[data-section-muñeco]")
 
  function mostrarTexto  (mensaje) { 
     
-    const codigoMensaje = `<textarea cols="20" rows="14" class="textoMensaje"  data-mostrar-texto> ${mensaje} </textarea>                     
+    const codigoMensaje = `<textarea cols="15" rows="14" class="textoMensaje"  data-mostrar-texto> ${mensaje} </textarea>                     
     <button type="button" onclick="copiar()" class="copiar"> Copiar </button>`
 
     contenedorDiv.remove()    
@@ -22,7 +22,7 @@ const contenedor = document.querySelector("[data-section-muñeco]")
 
 const mostrarTextoDesencriptado = (mensaje) =>{
 
-    const codigoMensaje = `<textarea cols="20" rows="14" class="textoMensaje"  data-mostrar-texto> ${mensaje} </textarea>                     
+    const codigoMensaje = `<textarea cols="15" rows="14" class="textoMensaje"  data-mostrar-texto> ${mensaje} </textarea>                     
         <h5 class="mensaje3">El texto se descodifico correctamente</h5>`
 
     contenedorDiv.remove()    
